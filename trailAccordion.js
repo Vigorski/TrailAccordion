@@ -1,5 +1,5 @@
 (function($){
-	$.fn.traceAccordion = function(options = null){
+	$.fn.trailAccordion = function(options = null){
 		const T_ACCORDION_ACTIVE = "trail-accordion--active";
 		const T_ACCORDION_HEADER = ".trail-accordion-header";
 		const T_ACCORDION_BODY = ".trail-accordion-body";
@@ -14,7 +14,7 @@
 			activeAccordionItemHeaderHeight: null,
 			queuedAccordionItemPosition: null,
 			scrollToTarget: null
-		}
+		};
 
 		// VALIDATE OPTIONS
 		const accordionOptions = {
@@ -23,7 +23,7 @@
 			trailToSelection: typeof options.trailToSelection === "boolean" ? options.trailToSelection : true,
 			multiExpanded: typeof options.multiExpanded === "boolean" ? options.multiExpanded : false,
 			active: typeof options.active === "number" && options.active <= domSetup.accordionHeaders.length ? options.active : null,
-		}
+		};
 
 		if (!accordionOptions.animated) {
 			accordionOptions.aniSpeed = 0;
@@ -100,13 +100,4 @@
 
 		return this;
 	}
-
-	$(".trail-accordion").traceAccordion({
-		// animated: true,
-		// aniSpeed: 100,
-		// trailToSelection: false,
-		// multiExpanded: true,
-		// active: 1
-	});
-
 }(jQuery));
