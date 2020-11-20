@@ -1,5 +1,5 @@
 (function($){
-	$.fn.traceAccordion = function(options = null){
+	$.fn.trailAccordion = function(options = null){
 		const T_ACCORDION_ACTIVE = "trail-accordion--active";
 		const T_ACCORDION_HEADER = ".trail-accordion-header";
 		const T_ACCORDION_BODY = ".trail-accordion-body";
@@ -101,7 +101,7 @@
 		return this;
 	}
 
-	$(".trail-accordion").traceAccordion({
+	$(".trail-accordion").trailAccordion({
 		// animated: true,
 		// aniSpeed: 100,
 		// trailToSelection: false,
