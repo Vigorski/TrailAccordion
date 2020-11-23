@@ -38,6 +38,4 @@ jQuery 3.4
 
 #### License
 
-Copyright (c) 2020 Igor Veleski
-
-Licensed under the MIT license.
+Created by Igor Veleski - 2020
